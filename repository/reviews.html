@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/reviews-style.css">
+    <title>Отзыв</title>
+</head>
+<body>
+<div class="container">
+    <div class="title">Оставьте ваш отзыв</div>
+    <form action="/phpCode/addReview.php" method="post" class="review-form">
+        <p><b>Введите ваш отзыв:</b></p>
+        <p><textarea name="comment" required></textarea></p>
+        <p><b>Оценка:</b></p>
+        <p><input type="number" name="note" min="1" max="5" required></p>
+        <p><input type="submit" value="Оставить отзыв" class="button"></p>
+    </form>
+</div>
+</body>
+</html>

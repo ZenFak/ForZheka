@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/login-style.css">
+    <title>Вход</title>
+</head>
+<body>
+<form action="/phpCode/login.php" method="post">
+    <table>
+        <tr>
+            <td><label for="login">Логин:</label></td>
+            <td><input type="text" id="login" name="login" placeholder="Ваш логин.." required></br>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="password">Пароль:</label></td>
+            <td><input type="password" id="password" name="password" placeholder="Ваш пароль.." required></br></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Войти"></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

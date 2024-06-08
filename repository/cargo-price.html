@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/cargo-price.css">
+    <title>Расчет стоимости перевозки</title>
+</head>
+<body>
+<form action="/phpCode/calculate.php" method="post">
+    <p><b>Выберите тип груза:</b></p>
+    <select name="cargo_type">
+        <option value="big">Большой груз</option>
+        <option value="medium">Средний груз</option>
+        <option value="small">Маленький груз</option>
+    </select>
+    <p><b>Введите расстояние в километрах:</b></p>
+    <input type="number" name="distance" required>
+    <p><input type="submit" value="Рассчитать стоимость"></p>
+</form>
+</body>
+</html>
